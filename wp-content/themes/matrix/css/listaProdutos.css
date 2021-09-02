@@ -1,0 +1,285 @@
+/*********************************************
+** Lista Produtos
+*********************************************/
+
+/* Geral */
+.col-sm-9 h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+#listaProdutos {
+    width: 100%;
+    float: left;
+}
+
+.spotProduto {
+    margin: 45px 0 45px 0;
+}
+
+
+/* Todas Categorias */
+.todasCategorias{
+    width: 100%;
+    float: left;
+    background: #f7efec;
+    padding: 40px 0;
+    margin-bottom: 50px;
+}
+
+.todasCategorias h2 {
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 50px;
+    line-height: 150%;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.todasCategorias ul li h3 {
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 30px;
+    line-height: 130%;
+    color: #333;
+    margin: 0 0 30px;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloPrincipal.center {
+    text-align: center;
+}
+
+.todasCategorias ul li {
+    list-style: none;
+    padding: 30px 40px;
+    text-align: center;
+    border: solid 1px #dfdfdf;
+    margin-top: 20px;
+}
+
+/* Box SEO */
+
+.boxSeo {
+    width: 100%;
+    float: left;
+    margin: 40px 0 60px 0;
+}
+
+.internoProduto {
+    margin-bottom: 30px;
+}
+
+/* Listagem Produtos */
+
+.listagemProdutos {
+    width: 100%;
+    float: left;
+}
+
+.listagemProdutos h2 {
+    color: #323A4D;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.listagemProdutos ul {
+    padding: 0;
+    margin: 0 0 30px 0;
+    float: left;
+    width: 100%;
+}
+
+.listagemProdutos ul li{
+    list-style: none;
+    margin: 0 0 30px 0;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 30px;
+}
+
+.listagemProdutos ul li:last-child {
+    border: none;
+}
+
+/************* Contato da Categorias *************/
+.modalContato {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.9);
+    display: none;
+}
+
+.modalContato .boxFlex {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContato .boxFlex #fechaFormulario {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.modalContato .boxFlex #fechaFormulario img {
+    width: 40px;
+}
+
+.modalContato .boxFlex .boxConteudo {
+    width: 95%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.modalContato .boxFlex .boxConteudo .tituloModal  {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.modalContato .boxFlex .boxConteudo .formulario {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.formulario {
+	float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.formulario .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .wpcf7-form-control-wrap {
+	display: inline-block;
+	width: 100%;
+}
+
+.formulario input[type=text],
+.formulario input[type=email],
+.formulario textarea {
+	width: 100%;
+	float: left;
+	padding: 6px 12px;
+	border: 0;
+}
+
+.formulario textarea {
+	height: 164px;
+}
+
+.formulario .col-sm-12 {
+	text-align: center;
+	margin-top: 20px;
+	position: relative;
+}
+
+.formulario .col-sm-12 input[type=submit] {
+	background: #dfdf42;
+    border-radius: 15px;
+    padding: 13px 30px;
+    border: 0;
+    color: #323A4D!important;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.formulario .col-sm-12 input[type=submit]:hover {
+	transform: scale(1.03);
+}
+
+.formulario .col-sm-12 .ajax-loader {
+	position: absolute;
+    left: calc(50% - 12px);
+    top: 13px;
+    margin: 0;
+}
+
+.formulario .wpcf7-not-valid-tip {
+	position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 11px;
+}
+
+.formulario .wpcf7 form .wpcf7-response-output {
+	margin: 30px 0 0 0;
+    float: left;
+    width: 100%;
+    border-width: 1px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 12px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    /* Tipografia */
+    .listagemProdutos h2 {
+        float: left;
+        width: 100%;
+        line-height: 160%;
+        color: #323a4d;
+        font-size: 22px;
+        margin: 0 0 20px;
+    }
+
+    .todasCategorias h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /* Listagem de Produtos */
+    .listagemProdutos ul li .boxInterno figure {
+        margin-bottom: 30px;
+    }
+
+    /* Categorias */
+    .todasCategorias ul {
+        padding: 0;
+    }
+    
+    .todasCategorias ul li {
+        padding: 20px;
+        border: 0!important;
+    }
+    
+}

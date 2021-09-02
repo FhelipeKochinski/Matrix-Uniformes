@@ -1,0 +1,339 @@
+/*********************************************
+** Home
+*********************************************/
+
+/* Geral */
+#paginaInicial {
+	float: left;
+	width: 100%;
+}
+
+.tituloPrincipal {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 40px;
+}
+
+.tituloPrincipal.center {
+    text-align: center;
+    margin-bottom: 45px;;
+}
+
+.tituloPrincipal .boxInterno.center {
+    text-align: center;
+}
+
+.tituloPrincipal .titulo {
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 50px;
+    line-height: 150%;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.tituloPrincipal .borda {
+    background: #323a4d;
+    border-radius: 60px;
+    width: 85px;
+    height: 5px;
+    display: inline-block;
+}
+
+/* Banner Principal - Desktop */
+#sliderHome {
+	float: left;
+	width: 100%;
+    margin-bottom: 25px;
+}
+
+#sliderHome ul {
+	padding: 0;
+}
+
+#sliderHome ul li img {
+	width: 100%;
+}
+
+#sliderHome .fa-arrow-circle-left {
+	position: absolute;
+	font-size: 34px;
+	color: #dfdf42;
+	z-index: 1;
+	top: calc(50% - 17px);
+	cursor: pointer;
+	left: 30px;
+}
+
+#sliderHome .fa-arrow-circle-right {
+	position: absolute;
+	font-size: 34px;
+	color: #dfdf42;
+	z-index: 1;
+	top: calc(50% - 17px);
+	cursor: pointer;
+	right: 30px;
+}
+
+#sliderHome .slick-dots {
+	position: absolute;
+	bottom: -30px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#sliderHome .slick-dots li {
+	display: inline-block;
+	margin: 0 4px;
+}
+
+#sliderHome .slick-dots li button {
+	width: 17px;
+	height: 17px;
+	background: #dfdf42;
+	border: 0;
+	border-radius: 100px;
+	font-size: 0;
+}
+
+#sliderHome .slick-dots li.slick-active button {
+	background: #D6B1A2;
+}
+
+/* Banner Principal - Mobile */
+#paginaInicial #sliderHomeMobile {
+	display: none;
+}
+
+/* Conteúdo 1 */
+.conteudo_camisetas {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    margin: 10px 0 10px 0;
+}
+
+.conteudo_camisetas .textoBox {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.conteudo_camisetas .texto {
+    padding-right: 50px;
+}
+
+/* Conteúdo 2 */
+.conteudo_shorts {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    background: #f7efec;
+    margin: 10px 0 10px 0;
+}
+
+.conteudo_shorts .textoBox {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.conteudo_shorts .texto {
+    padding-left: 50px;
+}
+
+/* Conteúdo 3 */
+.conteudo_bones {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+    margin: 10px 0 10px 0;
+}
+
+.conteudo_bones .textoBox {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.conteudo_bones .texto {
+    padding-left: 50px;
+}
+
+/* Clientes e Fornecedores (C&F)*/
+#paginaInicial .clientesFornecedores {
+    width: 100%;
+    float: left;
+    background: #f7efec;
+    padding: 50px 0 50px 0;
+}
+
+.clientesFornecedores ul {
+    float: left;
+    width: 100%;
+    margin: 0 0 40px;
+    padding: 0;
+}
+
+.clientesFornecedores ul li {
+    list-style: none;
+    float: left;
+    padding: 30px;
+    border: solid 1px #dfdfdf;
+}
+
+/* Botão C&F */
+.clientesFornecedores .divClienteFornecedor {
+    width: 100%;
+    float: left;
+    justify-content: center;
+    display: flex;
+}
+
+/* Quem Somos */
+.quemSomos {
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.quemSomos .textoBox {
+    padding: 20px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+
+    /* Geral */
+    .tituloPrincipal {
+        margin: 0 0 20px;
+    }
+
+    .tituloPrincipal .titulo {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .botaoGeral {
+        margin-bottom: 40px;
+    }
+
+    .conteudo_camisetas .texto,
+    .conteudo_shorts .texto,
+    .conteudo_bones .texto {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* Slide - Desktop */
+	#paginaInicial #sliderHome {
+        display: none;
+    }
+
+    /* Slide - Mobile */
+    #paginaInicial #sliderHomeMobile {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+        
+    #sliderHomeMobile .slick-dots {
+        position: absolute;
+        bottom: -30px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #sliderHomeMobile .slick-dots li {
+        display: inline-block;
+        margin: 0 4px;
+    }
+    
+    #sliderHomeMobile .slick-dots li button {
+        width: 17px;
+        height: 17px;
+        background: #dfdf42;
+        border: 0;
+        border-radius: 100px;
+        font-size: 0;
+    }
+    
+    #sliderHomeMobile .slick-dots li.slick-active button {
+        background: #D6B1A2;
+    }
+
+    /* Conteúdo 1 */
+
+    .conteudo_camisetas {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .conteudo_camisetas .textoBox {
+        margin-bottom: 25px;
+    }
+
+    .conteudo_camisetas figure {
+       margin-bottom: 30px;
+    }
+   
+    /* Conteúdo 2 */
+
+    .conteudo_shorts {
+        padding: 40px 0 0 0;
+    }
+
+    .conteudo_shorts .tituloPrincipal .titulo {
+        margin-top: 30px;
+    }
+
+    .conteudo_shorts .textoBox {
+        margin-bottom: 20px;
+    }
+
+    /* Conteúdo 3 */
+
+    .conteudo_bones {
+        padding: 0 0 40px 0;
+    }
+
+    .conteudo_bones .textoBox {
+        margin-bottom: 20px;
+    }
+
+    /* C&F - Home */
+
+    #paginaInicial .clientesFornecedores {
+        padding: 30px 0 0 0;
+    }
+
+
+    .clientesFornecedores .listaClientes {
+        margin: 15px 0 30px;
+    }
+
+    .clientesFornecedores .listaClientes .spotCliente {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .clientesFornecedores .tituloPrincipal.center {
+        margin-bottom: 15px;
+    }
+
+    /* Que Somos */
+
+    .quemSomos {
+        padding: 30px 0 60px 0;
+    }
+}

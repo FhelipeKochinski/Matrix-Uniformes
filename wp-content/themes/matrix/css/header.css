@@ -1,0 +1,397 @@
+
+/*********************************************
+** Header 
+*********************************************/
+
+/* Logo Topo */
+.topHeader #logo {
+    flex: 1;
+}
+
+/* Cabeçalho Topo */
+.nav-top {
+    background-color: #F7EFEC;
+    float: left;
+    width: 100%;
+    height: 37px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cabecalhoTopo {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 9px;
+}
+
+#cabecalhoTopo .linkHeader a{
+    font-family: 'Montserrat', sans-serif;
+    color: #828282;
+}
+
+#cabecalhoTopo i {
+    font-size: 20px;
+    color: #323a4d;
+    margin-right: 5px;
+    line-height: 20px;
+}
+
+#cabecalhoTopo .texto {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display:inline-block;
+    list-style: none;
+}
+.linkHeader {
+    padding-left: 15px;
+}
+
+/* Menu Principal */
+
+#header .container {
+    display: flex;
+	align-items: flex-end;
+}
+
+.topHeader {
+    float: left;
+    width: 100%;
+    background: #Fff;
+    padding: 10px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2.2px solid #dfdf42;
+}
+
+.topHeader #menuPrincipal {
+    flex: 1;
+    text-align: right;
+}
+
+.topHeader #menuPrincipal li {
+    list-style: none;
+    display: inline-block;
+    padding: 7px;
+}
+
+.topHeader #menuPrincipal ul li a {
+    text-transform: uppercase;
+    color: #828282;
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: solid 4px transparent;
+    transition: all .2s linear;
+    font-weight: 500;
+}
+
+#header .topHeader #boxMenu {
+	display: inline-block;
+}
+
+#header .topHeader #boxMenu ul li {
+	position: relative;
+}
+
+#header .topHeader #boxMenu ul li a i {
+    color: #dfdf42;
+    margin-left: 5px;
+}
+
+.topHeader #menuPrincipal ul li a:hover {
+    color: black;
+}
+
+#header .topHeader #boxMenu ul li a i {
+	color: #dfdf42;
+}
+
+#header .topHeader #boxMenu ul li.current_page_item a,
+#header .topHeader #boxMenu ul li a:hover {
+    border-color: #dfdf42;
+    color: #323a4d;
+}
+
+/* Submenu  */
+#menu-menu-principal .sub-menu {
+    padding-bottom: 7px;
+}
+
+#menu-menu-principal #menu-item-95 .sub-menu {
+    padding-left: 0;
+}
+
+#header .topHeader #boxMenu ul li:hover ul {
+	display: block;
+}
+
+#header .topHeader #boxMenu ul li ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+    width: 250px;
+    left: 0;
+	z-index: 1;
+    padding-top: 20px;
+    background: #b3b356;
+    border-radius: 10px;
+    padding-left: 0px;
+}
+
+#header .topHeader #boxMenu ul li ul::before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute;
+	top: 10px;
+	left: 0;
+    border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #b3b356;
+}
+
+#header .topHeader #boxMenu ul li ul li {
+	float: left;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+}
+
+#header .topHeader #boxMenu ul li ul li a {
+	background: #b3b356;
+    float: left;
+    width: 100%;
+    color: #fff;
+    text-transform: initial;
+    padding: 10px;
+    border: none!important;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#header .topHeader #boxMenu ul li ul li a:hover {
+	background: #a7a72d;
+    color: white;
+}
+
+/* Busca Menu*/
+
+#header .topHeader #buscaHeader i {
+    color: #DFDF42;
+    font-size: 20px;
+    margin: 0 0px 0 10px;
+    padding-bottom: 23px;
+    cursor: pointer;
+}
+
+/* Busca Full */
+
+#buscaFull {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.95);
+	z-index: 99;
+	display: none;
+}
+
+#buscaFull .boxInterno {
+	position : absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#buscaFull .boxInterno #fechaBusca {
+	position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#buscaFull .boxInterno #fechaBusca img {
+	width: 35px;
+}
+
+#buscaFull .boxInterno form {
+	width: 90%;
+	max-width: 500px;
+	position: relative;
+}
+
+#buscaFull .boxInterno form input {
+	float: left;
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: solid 1px #fff;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#buscaFull .boxInterno form button {
+	position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: none;
+    border: 0;
+}
+
+#buscaFull .boxInterno form button i {
+	color: #fff;
+    font-size: 24px;
+}
+
+/* Fecha menu */
+
+#header #fechaMenuMobile{
+    display: none;
+}
+
+/* Menu Mobile */
+
+#menuMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Logo */
+    #logo img {
+        max-width: 60%!important;
+    }
+    
+    /* Cabeçalho Topo */
+    .nav-top {
+        display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #cabecalhoTopo .linkHeader.email {
+        display: none;
+    }
+
+    /* Menu Principal */
+    #header #menuPrincipal {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        bottom: 0;
+        background-color: #323A4D;
+        z-index: 99;
+        width: 300px;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        padding: 20px 10px;
+        transition: all 0.2s linear;
+    }
+
+    #header #menuPrincipal.active {
+        right: 0;
+    }
+
+    .topHeader #menuPrincipal li {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topHeader #menuPrincipal ul li a {
+        border: none;
+        color: white;
+    }
+
+    #header .topHeader #boxMenu ul li a:hover {
+        color: #a7a72d;
+    }
+
+    #header #menuPrincipal #fechaMenuMobile {
+        display: block;
+        float: right;
+        width: 40px;
+        padding: 5px 10px 0 0;
+    }
+
+    #header #menuPrincipal #menu-menu-principal {
+        padding-left: 8px;
+    }
+
+	/*Menu Mobile */
+    #header .topHeader #menuMobile {
+        cursor: pointer;
+        display: block;
+    }
+
+    #header .topHeader #menuMobile i{
+		font-size: 33px;
+    	color: #DFDF42;
+        padding-left: 15px;
+	}
+
+    #header .topHeader #boxMenu ul li.current_page_item a,
+    #header .topHeader #boxMenu ul li a:hover {
+        border: none;
+        color: #fff;
+    }
+
+    /* Busca Menu*/
+    #header .topHeader #buscaHeader i {
+        padding: 0 15px;
+        font-size: 33px;
+    }
+
+    /* Submenu */
+	#header .topHeader #boxMenu ul li ul {
+		display: block;
+		position: relative;
+		left: auto;
+		top: auto;
+		width: 100%;
+		padding: 0;
+		margin: 0 0 0 0;
+        background-color: #323A4D;
+	}
+
+	#header .topHeader #boxMenu ul li ul::before {
+		display: none;
+	}
+
+	#header .topHeader #boxMenu ul li ul li {
+		position: relative;
+		padding-left: 10px;
+        background: #323A4D;
+	}
+
+	#header .topHeader #boxMenu ul li ul li::before {
+		content: "»";
+		color: rgb(255, 255, 255);
+		position: absolute;
+		left: 0;
+		top: 7px;
+		font-size: 20px;
+	}
+
+    #header .topHeader #boxMenu ul li ul li a {
+        background-color: #323A4D;
+    }
+
+    #header .topHeader #boxMenu ul li ul li a:hover {
+        background-color: #323A4D;
+        color: #a7a72d;
+    }
+}

@@ -1,0 +1,166 @@
+/*********************************************
+** Contato
+*********************************************/
+
+/* Geral */
+#contato {
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+#contato h1 {
+	margin-bottom: 20px;
+}
+
+#contato .borda {
+	margin-bottom: 20px;
+}
+
+/* Bloco Inicial */
+.blocoInicial {
+	float: left;
+	width: 100%;
+}
+
+.blocoInicial .texto {
+	float: left;
+	width: 100%;
+}
+
+/* Formulário */
+.formulario {
+	float: left;
+    width: 100%;
+    text-align: center;
+    background: #323a4d;
+    padding: 50px 0;
+}
+
+.boxContato {
+	background: #323A4D;
+}
+
+.formulario .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .wpcf7-form-control-wrap {
+	display: inline-block;
+	width: 100%;
+}
+
+.formulario input[type=text],
+.formulario input[type=email],
+.formulario textarea {
+	width: 100%;
+	float: left;
+	padding: 6px 12px;
+	border: 0;
+}
+
+.formulario textarea {
+	height: 164px;
+}
+
+.formulario .col-sm-12 {
+	text-align: center;
+	margin-top: 20px;
+	position: relative;
+}
+
+.formulario .col-sm-12 input[type=submit] {
+	background: #dfdf42;
+    border-radius: 15px;
+    padding: 13px 30px;
+    border: 0;
+    color: #323A4D!important;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.formulario .col-sm-12 input[type=submit]:hover {
+	transform: scale(1.03);
+}
+
+.formulario .col-sm-12 .ajax-loader {
+	position: absolute;
+    left: calc(50% - 12px);
+    top: 13px;
+    margin: 0;
+}
+
+.formulario .wpcf7-not-valid-tip {
+	position: absolute;
+    right: 5px;
+    top: 2px;
+    font-size: 11px;
+}
+
+.formulario .wpcf7 form .wpcf7-response-output {
+	margin: 30px 0 0 0;
+    float: left;
+    width: 100%;
+    border-width: 1px;
+    color: #243E8D;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Mapa */
+.boxMapa {
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.boxMapa iframe {
+	width: 100%;
+	float: left;
+	height: 500px;
+}
+
+/* Contato Enviado */
+.contatoEnviado {
+	float: left;
+	width: 100%;
+	margin: 0 0 50px 0;
+	text-align: center;
+}
+
+.contatoEnviado span {
+	font-size: 18px;
+	color: green;
+}
+
+@media (max-width: 768px) {
+	
+	/* Geral */
+	#contato {
+		padding: 30px 0;
+	}
+
+	/* Formulário */
+	.formulario {
+		padding: 30px 0;
+		margin-top: 30px;
+	}
+
+	.formulario .container .col-sm-8 {
+		padding: 0;
+	}
+
+	.formulario input[type=text], 
+	.formulario input[type=email], 
+	.formulario textarea {
+		padding: 10px 12px;
+	}
+	
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* { 
+	outline: none!important;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+	padding: 0!important;
+}
+
+a:active, 
+a:checked,
+a:focus, 
+a:hover { 
+	outline: none!important; 
+	text-decoration: none;
+}
+
+body { 
+	font-family: 'Work Sans', sans-serif;
+	margin:0; 
+	padding:0;
+}
+
+.clear { 
+	clear:both;
+}
+
+.none {
+	display: none!important;
+}
+
+img { 
+	max-width:100%!important; 
+	height:auto; 
+}
+
+
+/* BreadCrums pro geral */
+.bread-crumbs-pagina {
+    padding: 10px 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.bread-crumbs-pagina .breadcrumb_last {
+    color: #828282;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+
+.bread-crumbs-pagina #breadcrumbs {
+    margin: 0;
+    color: #828282!important;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.bread-crumbs-pagina #breadcrumbs a {
+    color: #828282!important;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* Alinhamentos de Conteúdo */
+
+.aligncenter,
+.alignleft,
+.alignright {
+    display: block;
+    padding: 0;
+}
+
+.aligncenter {
+    float: none;
+    margin: .5em auto 1em;
+}
+
+.alignright {
+    float: right;
+    margin: .5em 0 1em 1em;
+}
+
+.alignleft {
+    float: left;
+    margin: .5em 1em 1em 0;
+}
+
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption-text {
+	text-align: center;
+    font-size: 12px;
+	margin: 10px 0 0 0;
+}
+
+/* FONTES */
+
+a { 
+	text-decoration:none!important; 
+}
+
+a:hover { 
+	text-decoration:none; 
+}
+
+p, span, li {
+	color: #828282;
+	font-size: 14px;
+	line-height: 180%;
+}
+
+strong {
+	color: #828282;
+}
+
+h1 {
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 50px;
+    line-height: 150%;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    font-size: 50px;
+    line-height: 150%;
+    color: #333;
+    margin: 0;
+}
+
+/* Borda */
+
+.borda {
+    background: #323a4d;
+    border-radius: 60px;
+    width: 85px;
+    height: 5px;
+    display: inline-block;
+}
+
+/*********************************************
+** Botão
+*********************************************/
+
+.botaoGeral {
+    background: #dfdf42;
+    border-radius: 15px;
+    padding: 13px 10px;
+    border: 0;
+    color: #323A4D!important;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/*********************************************
+** Hover Zoom
+*********************************************/
+
+.hoverZoom {
+	transition: all 0.2s linear;
+}
+
+.hoverZoom:hover {
+	transform: scale(1.03);
+}
+
+
+/* Newsletter */
+/* CSS Document */
+
+#entreEmContato {
+    margin: 40px 0 120px 0;
+    background: #F8F9FA;
+}
+
+#contato {
+	float: left;
+	width: 100%;
+	padding: 50px 0;
+}
+
+#entreEmContato .container {
+    margin-left: -35px;
+    padding: 50px 0 40px 0;
+}
+
+/* Icone envelope */
+#entreEmContato .imagem i {
+    font-size: 92px;
+    color: #415364;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+/* Formulário */
+#entreEmContato .formulario p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:#828282
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label-inline {
+    font-family: 'Montserrat', sans-serif;
+    color: #828282;
+}
+
+/* Submit Botão */
+#entreEmContato .formulario .wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    /* Tipografia */
+
+    h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    /* BreadCrums */
+
+    .bread-crumbs-pagina #breadcrumbs {
+        font-size: 11px;
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+
+    .bread-crumbs-pagina #breadcrumbs a {
+        font-size: 11px;
+    }
+
+    .bread-crumbs-pagina #breadcrumbs span {
+        line-height: 160%;
+    }
+
+    .bread-crumbs-pagina #breadcrumbs .breadcrumb_last {
+        color: #828282!important;
+        font-size: 11px;
+    }
+
+    /* Botão Geral */
+    .listagemProdutos .botaoGeral {
+        display: flex;
+        justify-content: center;
+    }
+}
