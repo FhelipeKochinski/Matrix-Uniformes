@@ -43,7 +43,6 @@ img {
     float:left
 }
 
-
 /* BreadCrums pro geral */
 .bread-crumbs-pagina {
     padding: 10px 0;
@@ -76,7 +75,6 @@ img {
 }
 
 /* Alinhamentos de Conteúdo */
-
 .aligncenter,
 .alignleft,
 .alignright {
@@ -167,13 +165,14 @@ h2 {
 .botaoGeral {
     background: #dfdf42;
     border-radius: 15px;
-    padding: 13px 10px;
+    padding: 13px 30px;
     border: 0;
     color: #323A4D!important;
     display: inline-block;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 13px;
     text-transform: uppercase;
 }
 

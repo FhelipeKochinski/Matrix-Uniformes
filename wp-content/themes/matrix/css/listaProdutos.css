@@ -120,6 +120,10 @@ p {
     margin-bottom: 50px;
 }
 
+.todasCategorias .botaoGeral {
+    padding: 13px 13px;
+}
+
 .todasCategorias h2 {
     font-family: 'Playfair Display',serif;
     font-weight: 700;
