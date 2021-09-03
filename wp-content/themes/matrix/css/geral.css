@@ -38,6 +38,11 @@ img {
 	height:auto; 
 }
 
+.boxInterno {
+    width:100%;
+    float:left
+}
+
 
 /* BreadCrums pro geral */
 .bread-crumbs-pagina {

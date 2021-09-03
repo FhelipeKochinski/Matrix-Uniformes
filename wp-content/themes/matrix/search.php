@@ -3,107 +3,99 @@ get_header();
 $s = get_search_query();
 ?>
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/home.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/geral.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/listaProdutos.css">
 
 <?php include('templates/contents/breadCrumbs.php') ?>
 
-<section id="blog">
+<section id="listagemProdutos">
 
 	<!-- Título -->
-	<div class="container">
+	<div class="container buscaProduto">
 		<?php tituloPrincipal('Resultados para: ' . $s, 'h1') ?>
 	</div>
-	
-	<!-- Busca -->
-	<?php include('templates/contents/buscaBlog.php') ?>
-	
-	<!-- Conteúdo -->
-	<div class="container">
-	
-		<div class="conteudoBlog conteudoComSidebar">
+
+	<!-- Listagem -->
+	<section class="listagemProdutos">
+
+		<!-- Conteúdo -->
+		<div class="container">
 		
-			<div class="col-sm-9">
+			<div class="conteudoBusca">
+			
+				<div class="col-sm-9">
 
-				<ul class="lista_noticias">
-					
-					<?php $cont = 1; ?>
-
-					<?php if($wp_query->have_posts()) : ?>
-
-						<?php while ( have_posts() ) : ?>
+					<ul class="lista_noticias">
 						
-							<?php the_post(); ?>
+						<?php $cont = 1; ?>
+
+						<?php if($wp_query->have_posts()) : ?>
+
+							<?php while ( have_posts() ) : ?>
 							
-							<?php get_template_part('content','postBlog'); ?>
+								<?php the_post(); ?>
+								
+								<?php get_template_part('content','produto'); ?>
 							
-							<?php if($cont % 5 == 0 && $cont < 6){ ?>
+							<?php endwhile; ?>
 
-								<?php if(get_field('qual_mostrar', 1156) == 'banner'){ ?>
+							<?php
+							the_posts_pagination( array(
+								'prev_text' => '<i class="fa fa-angle-double-left" aria-hidden="true"></i>',
+								'next_text' => '<i class="fa fa-angle-double-right" aria-hidden="true"></i>'
+							) );
+							wp_reset_query();
+							wp_reset_postdata();
+							?>
 
-									<?php if(get_field('link_banner_conteudo_home', 1156)){ ?>
-										<a href="<?php echo get_field('link_banner_conteudo_home', 1156) ?>" 
-										<?php if(get_field('nova_guia_banner_conteudo_home', 1156)[0] == 'sim'){ ?> target="_blank" <?php } ?>>
-									<?php }	?>
+						<?php else : ?>
 
-									<?php if(get_field('banner_banner_conteudo_home', 1156)){ ?>
-										<img class="bannerListagem" src="<?php echo get_field('banner_banner_conteudo_home', 1156) ?>" alt="Muito Mais Digital" />
-									<?php }	?>
+							<p style="font-size: 22px; margin: 100px 0;">Desculpe, não foram encontrados resultados para a sua pesquisa.</p>
 
-									<?php if(get_field('link_banner_conteudo_home', 1156)){ ?>
-										</a>
-									<?php }	?>
+						<?php endif; ?>
 
-								<?php } else {	?>
+					</ul>
 
-									<?php if(get_field('iframe_banner_conteudo_home', 1156)){ ?>
-										<div class="iframeListagem">
-											<?php the_field('iframe_banner_conteudo_home', 1156) ?>
-										</div>
-									<?php }	?>
-
-								<?php }	?>
-
-							<?php }	?>
-							
-							<?php if($cont % 2 == 0){ ?>
-								<div class="clear"></div>
-							<?php } ?>
-						
-							<?php $cont++ ?>
-							
-						<?php endwhile; ?>
-
-						<?php
-						the_posts_pagination( array(
-							'prev_text' => '<i class="fa fa-angle-double-left" aria-hidden="true"></i>',
-							'next_text' => '<i class="fa fa-angle-double-right" aria-hidden="true"></i>'
-						) );
-						wp_reset_query();
-						wp_reset_postdata();
-						?>
-
-					<?php else : ?>
-
-						<p style="font-size: 22px; margin: 100px 0;">Desculpe, não foram encontrados resultados para a sua pesquisa.</p>
-
-					<?php endif; ?>
-
-				</ul>
+				</div>
 
 			</div>
+			
+		</div>
+	</section>
+	<!-- /Conteúdo -->
+	
+	<!-- Todas Categorias -->
+	<section class="todasCategorias">
+		<div class="container">
+		
+			<!-- Título -->
+			<div class="tituloPrincipal center">
+			
+				<div class="boxInterno center">
+					<h2 class="titulo">MAIS CATEGORIAS</h2>
 
-			<div class="col-sm-3 boxSidebar">
-				<?php echo get_sidebar() ?>
+					<div class="clear"></div>
+
+					<div class="borda"></div>
+				</div>
+			
 			</div>
+
+			<!-- Listagem Categorias -->
+			<ul>
+				<?php foreach (get_terms('categoria') as $cat) : ?>
+					<li class="col-sm-3">
+						<h3><?= $cat->name ?></h3>
+						<a class="botaoGeral hoverZoom" href="<?= get_term_link($cat->slug, 'categoria') ?>">SOLICITAR ORÇAMENTO</a>
+					</li>
+				<?php endforeach; ?>
+			</ul>
 		
 		</div>
-		
-	</div>
-	
-	<!-- Newsletter -->
-	<?php include('templates/contents/newsletter.php') ?>
-	
+
+	</section>
+	<!-- /Todas Categorias -->
+
 </section>
 
 <?php get_footer(); ?>
